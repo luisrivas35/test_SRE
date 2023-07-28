@@ -1,0 +1,38 @@
+# Ignore compiled files and build directories
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+build/
+bin/
+dist/
+node_modules/
+vendor/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files and directories
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore sensitive or environment-specific files
+config.ini
+secrets.json
+.env
+
+# Ignore package-lock.json for npm projects
+package-lock.json
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+terraform_aws/.terraform/*
