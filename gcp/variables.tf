@@ -1,6 +1,6 @@
 variable "project" {
-  description = "Google Cloud project ID"
-  default     = "deploy-test-388716"  # Replace with your actual Google Cloud project ID
+  description = "Google Cloud project test"
+  default     = "deploy-test-388716"  
 }
 
 variable "region" {
