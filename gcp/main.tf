@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("../deploy-test-388716.json")# personal credentials
+  credentials = file("xxx.json")# here your credentials
   project     = var.project
   region      = var.region
 }
@@ -24,7 +24,7 @@ resource "null_resource" "get_lb_ip" {
     command = "gcloud --project=${var.project} compute addresses describe ${google_compute_address.lb_ip.name} --region=${var.region} --format='value(address)'"
     interpreter = ["powershell", "-command"]
     environment = {
-      CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE = "../deploy-test-388716.json" # personal credentials
+      CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE = "xxx.json")# here your credentials
     }
   }
 
